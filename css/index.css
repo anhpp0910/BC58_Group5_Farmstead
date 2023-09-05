@@ -18,10 +18,165 @@ body {
 /* GROW NATURALLY */
 
 /* WHAT WE DO */
+.whatWeDo {
+  background-color: #009f4d;
+}
+
+.whatWeDo__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.whatWeDo__top {
+  position: relative;
+}
+
+.whatWeDo__top h5.small-title {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
+.whatWeDo__top h3.main-title {
+  font-family: "Volkhov", serif;
+  font-size: 40px;
+  color: white;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.whatWeDo__top p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: white;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+}
+
+.whatWeDo__top h4.title-bg-content {
+  position: absolute;
+  font-family: "Volkhov", serif;
+  line-height: 28px;
+  color: #fff;
+  font-weight: bold;
+  z-index: 0;
+  opacity: 0.14;
+  font-size: 12vw;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  margin: 0;
+  padding: 0;
+}
 
 /* WHY CHOOSE US */
 
 /* GALLERY */
+.gallery__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.gallery h5.small-title {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fb811e;
+  font-size: 22px;
+  margin: 0;
+}
+
+.gallery h3.main-title {
+  font-family: "Volkhov", serif;
+  font-size: 40px;
+  color: #060606;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.gallery p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+  margin: 0;
+}
+
+.gallery .btn-style {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  background: #fb811e;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.25s ease-in-out;
+}
+
+.gallery .btn-style:hover {
+  background: #009f4d;
+  color: #ffffff;
+}
+
+.gallery__item {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.gallery__item img {
+  width: 100%;
+}
+
+.gallery__item .gallery__text {
+  position: absolute;
+  z-index: 0;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  background: rgb(255 255 255 / 27%);
+  text-align: center;
+  font-family: "Volkhov", serif;
+  font-size: 1.25rem;
+  line-height: 28px;
+  padding: 6px;
+  margin: 20px;
+}
+/* 
+.gallery__item::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-17deg);
+}
+
+.gallery__item:hover::before {
+  opacity: 1;
+  top: -30%;
+  left: -30%;
+  transition-property: left, top, opacity;
+  transition-duration: 0.7s, 0.7s, 0.15s;
+  transition-timing-function: ease;
+} */
 
 /* FEEDBACK */
 
