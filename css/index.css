@@ -140,8 +140,84 @@ body {
   margin: 0 auto;
 }
 
+.whyChooseUs h5.small-title {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fb811e;
+  font-size: 22px;
+  margin: 0;
+}
+
+.whyChooseUs h3.main-title {
+  font-family: "Volkhov", serif;
+  font-size: 40px;
+  color: #060606;
+  line-height: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.whyChooseUs p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+  margin: 0;
+}
+
+.whyChooseUs__feature i {
+  font-size: 30px;
+  color: #fb811e;
+}
+
+.whyChooseUs__desc {
+  margin-left: 0.5rem;
+}
+
+.whyChooseUs__desc h4 {
+  color: #060606;
+  font-family: "Volkhov", serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.whyChooseUs__right {
+  position: relative;
+}
+
 .whyChooseUs__right img {
   width: 100%;
+  border-radius: 30px;
+}
+
+.whyChooseUs__box {
+  background-color: #fb811e;
+  position: absolute;
+  left: -85px;
+  bottom: 38px;
+  padding: 40px;
+  box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+  min-width: 300px;
+  border-radius: 0 0 100px 0;
+  text-align: center;
+}
+
+.whyChooseUs__box h6 {
+  font-family: "Volkhov", serif;
+  font-size: 70px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+}
+
+.whyChooseUs__box p {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .whyChooseUs__item {
