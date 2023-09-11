@@ -11,6 +11,37 @@ body {
   line-height: 1.5;
 }
 
+/* CONTAINER */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 /* HEADER */
 
 /* CAROUSEL */
@@ -20,11 +51,6 @@ body {
 /* WHAT WE DO */
 .whatWeDo {
   background-color: #009f4d;
-}
-
-.whatWeDo__content {
-  width: 80%;
-  margin: 0 auto;
 }
 
 .whatWeDo__top {
@@ -135,10 +161,6 @@ body {
 }
 
 /* WHY CHOOSE US */
-.whyChooseUs__content {
-  width: 80%;
-  margin: 0 auto;
-}
 
 .whyChooseUs h5.small-title {
   font-family: "Volkhov", serif;
@@ -266,9 +288,15 @@ body {
 }
 
 /* GALLERY */
-.gallery__content {
+/* .gallery__content {
   width: 80%;
   margin: 0 auto;
+} */
+
+.gallery {
+  margin-bottom: 1.5em;
+  display: grid;
+  grid-gap: 0.5em;
 }
 
 .gallery h5.small-title {
@@ -317,6 +345,10 @@ body {
 .gallery__item {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.gallery__effect {
   position: relative;
 }
 
@@ -324,7 +356,7 @@ body {
   width: 100%;
 }
 
-.gallery__item .gallery__text {
+.gallery__effect .gallery__text {
   position: absolute;
   z-index: 0;
   color: #fff;
@@ -341,15 +373,7 @@ body {
   margin: 20px;
 }
 
-/* TODO:
-- Dark theme
-- Responsive
-- Gallery shine effect on hover
-
-
-
-/* 
-.gallery__item::before {
+.gallery__effect::before {
   position: absolute;
   top: 0;
   left: -75%;
@@ -358,6 +382,11 @@ body {
   content: "";
   width: 50%;
   height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 0) 0%,
@@ -366,14 +395,63 @@ body {
   transform: skewX(-17deg);
 }
 
-.gallery__item:hover::before {
-  opacity: 1;
-  top: -30%;
-  left: -30%;
-  transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
-  transition-timing-function: ease;
-} */
+.gallery__effect:hover::before {
+  animation: shine 0.95s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery p {
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .gallery h5.small-title,
+  .whatWeDo__top h5.small-title,
+  .whyChooseUs h5.small-title {
+    font-size: 20px;
+  }
+  .gallery h3.main-title,
+  .whatWeDo__top h3.main-title,
+  .whyChooseUs h3.main-title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery h5.small-title,
+  .whatWeDo__top h5.small-title,
+  .whyChooseUs h5.small-title {
+    font-size: 18px;
+  }
+  .gallery h3.main-title,
+  .whatWeDo__top h3.main-title,
+  .whyChooseUs h3.main-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .gallery h3.main-title,
+  .whatWeDo__top h3.main-title,
+  .whyChooseUs h3.main-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* TODO:
+- Dark theme
+- Responsive
+
 
 /* FEEDBACK */
 
