@@ -373,7 +373,7 @@ body {
   margin: 20px;
 }
 
-.gallery__effect::before {
+.gallery__shine::before {
   position: absolute;
   top: 0;
   left: -75%;
@@ -395,7 +395,7 @@ body {
   transform: skewX(-17deg);
 }
 
-.gallery__effect:hover::before {
+.gallery__shine:hover::before {
   animation: shine 0.95s;
 }
 
@@ -406,8 +406,16 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-  .gallery p {
+  .gallery p,
+  .whyChooseUs__text p,
+  .whyChooseUs p {
     line-height: 26px;
+  }
+  .whyChooseUs__text h4 {
+    font-size: 19px;
+  }
+  .whyChooseUs__desc h4 {
+    font-size: 20px;
   }
 }
 
@@ -422,6 +430,9 @@ body {
   .whyChooseUs h3.main-title {
     font-size: 35px;
     line-height: 45px;
+  }
+  .whyChooseUs__text h4 {
+    font-size: 20px;
   }
 }
 
@@ -450,7 +461,7 @@ body {
 
 /* TODO:
 - Dark theme
-- Responsive
+- Div Gallery, p 
 
 
 /* FEEDBACK */
