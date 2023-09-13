@@ -1,3 +1,21 @@
+/* :root[data-theme="light"] {
+  --primary-color: #fb811e;
+  --secondary-color: #009f4d;
+  --font-color: #707070;
+  --bg-color: #fff;
+  --heading-color: #060606;
+  --border-color-light: #eee;
+} */
+
+:root {
+  --primary-color: #fb811e;
+  --secondary-color: #009f4d;
+  --font-color: #b7b7b7;
+  --bg-color: #222222;
+  --heading-color: #fdfffc;
+  --border-color-light: rgba(255, 255, 255, 0.2);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +27,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  background-color: var(--bg-color);
 }
 
 /* CONTAINER */
@@ -48,9 +67,29 @@ body {
 
 /* GROW NATURALLY */
 
+/* THEME SWITCHER */
+.theme-switcher {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.theme-switcher:hover {
+  color: var(--primary-color);
+}
+
+.theme-switcher i {
+  position: absolute;
+  font-size: 15px;
+  top: 30px;
+  right: 150px;
+  display: block;
+  cursor: pointer;
+}
+
 /* WHAT WE DO */
 .whatWeDo {
-  background-color: #009f4d;
+  background-color: var(--secondary-color);
 }
 
 .whatWeDo__top {
@@ -119,17 +158,17 @@ body {
 }
 
 .whatWeDo__item .card-body {
-  background: #fff;
+  background: var(--bg-color);
   padding: 30px 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   box-shadow: 0 25px 98px 0 rgb(19 19 19 / 3%);
-  border: 1px solid #eee;
+  border: 1px solid var(--border-color-light);
   border-top: none;
 }
 
 .whatWeDo__item .card-body span {
-  color: #009f4d;
+  color: var(--secondary-color);
   display: inline-block;
   background: rgb(0 159 77 / 16%);
   padding: 5px 20px;
@@ -142,20 +181,20 @@ body {
   font-size: 24px;
   line-height: 30px;
   font-weight: 600;
-  color: #060606;
+  color: var(--heading-color);
   margin: 15px 0;
   text-decoration: none;
   transition: all 0.5s;
 }
 
 .whatWeDo__item .card-body a:hover {
-  color: #009f4d;
+  color: var(--secondary-color);
 }
 
 .whatWeDo__item .card-body p {
   font-size: 17px;
   line-height: 27px;
-  color: #707070;
+  color: var(--font-color);
   margin: 0;
   padding: 0;
 }
@@ -166,7 +205,7 @@ body {
   font-family: "Volkhov", serif;
   font-weight: 400;
   line-height: 28px;
-  color: #fb811e;
+  color: var(--primary-color);
   font-size: 22px;
   margin: 0;
 }
@@ -174,7 +213,7 @@ body {
 .whyChooseUs h3.main-title {
   font-family: "Volkhov", serif;
   font-size: 40px;
-  color: #060606;
+  color: var(--heading-color);
   line-height: 50px;
   font-weight: 600;
   margin: 0;
@@ -183,13 +222,13 @@ body {
 .whyChooseUs p {
   font-size: 17px;
   line-height: 27px;
-  color: #707070;
+  color: var(--font-color);
   margin: 0;
 }
 
 .whyChooseUs__feature i {
   font-size: 30px;
-  color: #fb811e;
+  color: var(--primary-color);
 }
 
 .whyChooseUs__desc {
@@ -197,7 +236,7 @@ body {
 }
 
 .whyChooseUs__desc h4 {
-  color: #060606;
+  color: var(--heading-color);
   font-family: "Volkhov", serif;
   font-size: 24px;
   margin-bottom: 10px;
@@ -214,7 +253,7 @@ body {
 }
 
 .whyChooseUs__box {
-  background-color: #fb811e;
+  background-color: var(--primary-color);
   position: absolute;
   left: -85px;
   bottom: 38px;
@@ -265,7 +304,7 @@ body {
 }
 
 .whyChooseUs__text h4 {
-  color: #060606;
+  color: var(--heading-color);
   font-family: "Volkhov", serif;
   font-size: 22px;
   line-height: 25px;
@@ -276,13 +315,13 @@ body {
 }
 
 .whyChooseUs__item a:hover .whyChooseUs__text h4 {
-  color: #009f4d;
+  color: var(--secondary-color);
 }
 
 .whyChooseUs__text p {
   font-size: 17px;
   line-height: 27px;
-  color: #707070;
+  color: var(--font-color);
   padding: 0;
   margin: 10px 0 0;
 }
@@ -303,7 +342,7 @@ body {
   font-family: "Volkhov", serif;
   font-weight: 400;
   line-height: 28px;
-  color: #fb811e;
+  color: var(--primary-color);
   font-size: 22px;
   margin: 0;
 }
@@ -311,7 +350,7 @@ body {
 .gallery h3.main-title {
   font-family: "Volkhov", serif;
   font-size: 40px;
-  color: #060606;
+  color: var(--heading-color);
   line-height: 50px;
   font-weight: 600;
   margin: 0;
@@ -320,7 +359,7 @@ body {
 .gallery p {
   font-size: 17px;
   line-height: 27px;
-  color: #707070;
+  color: var(--font-color);
   margin: 0;
 }
 
@@ -330,7 +369,7 @@ body {
   text-transform: uppercase;
   padding: 12px 30px;
   font-weight: 600;
-  background: #fb811e;
+  background: var(--primary-color);
   border: none;
   color: #fff;
   border-radius: 30px;
@@ -338,7 +377,7 @@ body {
 }
 
 .gallery .btn-style:hover {
-  background: #009f4d;
+  background: var(--secondary-color);
   color: #ffffff;
 }
 
