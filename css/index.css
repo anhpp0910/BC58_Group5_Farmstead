@@ -1,19 +1,56 @@
-/* :root[data-theme="light"] {
+/* LIGHT THEME */
+#myBody {
   --primary-color: #fb811e;
   --secondary-color: #009f4d;
   --font-color: #707070;
   --bg-color: #fff;
   --heading-color: #060606;
   --border-color-light: #eee;
-} */
+}
 
-:root {
+#themeSwitcher .gg-sun {
+  display: none;
+}
+#themeSwitcher .gg-moon {
+  display: block;
+}
+
+/* DARK THEME */
+.dark#myBody {
   --primary-color: #fb811e;
   --secondary-color: #009f4d;
   --font-color: #b7b7b7;
   --bg-color: #222222;
   --heading-color: #fdfffc;
   --border-color-light: rgba(255, 255, 255, 0.2);
+}
+
+.dark #themeSwitcher .gg-sun {
+  display: block;
+}
+
+.dark #themeSwitcher .gg-moon {
+  display: none;
+}
+
+/* THEME SWITCHER */
+.themeSwitcher {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+}
+
+.themeSwitcher:hover {
+  color: var(--primary-color);
+}
+
+.themeSwitcher i {
+  position: absolute;
+  font-size: 15px;
+  top: 30px;
+  right: 150px;
+  display: block;
+  cursor: pointer;
 }
 
 * {
@@ -66,26 +103,6 @@ body {
 /* CAROUSEL */
 
 /* GROW NATURALLY */
-
-/* THEME SWITCHER */
-.theme-switcher {
-  position: absolute;
-  width: 100%;
-  color: #fff;
-}
-
-.theme-switcher:hover {
-  color: var(--primary-color);
-}
-
-.theme-switcher i {
-  position: absolute;
-  font-size: 15px;
-  top: 30px;
-  right: 150px;
-  display: block;
-  cursor: pointer;
-}
 
 /* WHAT WE DO */
 .whatWeDo {
