@@ -156,6 +156,16 @@ body {
   padding: 0;
 }
 
+.whatWeDo__bottom.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.whatWeDo__item {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .whatWeDo__item .card {
   border: none;
   background: none;
@@ -217,8 +227,20 @@ body {
 }
 
 /* WHY CHOOSE US */
+.whyChooseUs__1 .row,
+.whyChooseUs__2 .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
 
-.whyChooseUs h5.small-title {
+.whyChooseUs__left,
+.whyChooseUs__feature,
+.whyChooseUs__right {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.whyChooseUs__1 h5.small-title {
   font-family: "Volkhov", serif;
   font-weight: 400;
   line-height: 28px;
@@ -227,7 +249,7 @@ body {
   margin: 0;
 }
 
-.whyChooseUs h3.main-title {
+.whyChooseUs__1 h3.main-title {
   font-family: "Volkhov", serif;
   font-size: 40px;
   color: var(--heading-color);
@@ -236,7 +258,8 @@ body {
   margin: 0;
 }
 
-.whyChooseUs p {
+.whyChooseUs__1 p,
+.whyChooseUs__2 p {
   font-size: 17px;
   line-height: 27px;
   color: var(--font-color);
@@ -258,6 +281,7 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
   font-weight: 600;
+  line-height: 28px;
 }
 
 .whyChooseUs__right {
@@ -313,9 +337,9 @@ body {
 .whyChooseUs__item a:hover {
   border: 1px solid #eee;
 }
-
-.whyChooseUs__img,
-.whyChooseUs__text {
+.whyChooseUs__item,
+.whyChooseUs__item .col-3,
+.whyChooseUs__item .col-9 {
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -344,15 +368,14 @@ body {
 }
 
 /* GALLERY */
-/* .gallery__content {
-  width: 80%;
-  margin: 0 auto;
-} */
-
 .gallery {
   margin-bottom: 1.5em;
   display: grid;
   grid-gap: 0.5em;
+}
+
+.gallery .row {
+  margin: 0;
 }
 
 .gallery h5.small-title {
@@ -461,10 +484,12 @@ body {
   }
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 1200px) {
   .gallery p,
   .whyChooseUs__text p,
-  .whyChooseUs p {
+  .whyChooseUs__1 p,
+  .whyChooseUs__2 p {
     line-height: 26px;
   }
   .whyChooseUs__text h4 {
@@ -473,17 +498,20 @@ body {
   .whyChooseUs__desc h4 {
     font-size: 20px;
   }
+  .whyChooseUs__item a {
+    padding: 1.5rem 0.5rem;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .gallery h5.small-title,
   .whatWeDo__top h5.small-title,
-  .whyChooseUs h5.small-title {
+  .whyChooseUs__1 h5.small-title {
     font-size: 20px;
   }
   .gallery h3.main-title,
   .whatWeDo__top h3.main-title,
-  .whyChooseUs h3.main-title {
+  .whyChooseUs__1 h3.main-title {
     font-size: 35px;
     line-height: 45px;
   }
@@ -495,12 +523,12 @@ body {
 @media screen and (max-width: 768px) {
   .gallery h5.small-title,
   .whatWeDo__top h5.small-title,
-  .whyChooseUs h5.small-title {
+  .whyChooseUs__1 h5.small-title {
     font-size: 18px;
   }
   .gallery h3.main-title,
   .whatWeDo__top h3.main-title,
-  .whyChooseUs h3.main-title {
+  .whyChooseUs__1 h3.main-title {
     font-size: 32px;
     line-height: 42px;
   }
@@ -509,16 +537,11 @@ body {
 @media screen and (max-width: 568px) {
   .gallery h3.main-title,
   .whatWeDo__top h3.main-title,
-  .whyChooseUs h3.main-title {
+  .whyChooseUs__1 h3.main-title {
     font-size: 30px;
     line-height: 40px;
   }
 }
-
-/* TODO:
-- Dark theme
-- Div Gallery, p 
-
 
 /* FEEDBACK */
 
