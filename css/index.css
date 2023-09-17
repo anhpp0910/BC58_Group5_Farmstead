@@ -2,31 +2,140 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 
-body {
-  color: #404040;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
+h1 {
+  font-family: Volkhov, serif;
 }
 
-/* HEADER */
+/* strat header */
+.dropdown-menu a.active {
+  color: #fb811e;
+  text-decoration: none;
+}
+.dropdown-item:hover {
+  color: #fb811e;
+}
+.navbar h1 i {
+  font-size: 20px;
+  position: absolute;
+  transform: translateX(-110px);
+  transition-duration: 0;
+}
+.search-right input[type=search]{
+  background: #fff url(../img/search.png) no-repeat 10px center;;
+  border: solid 1px #eee;
+  padding: 0 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 10em;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: none;
+}
+#demo-2 input[type=search]:focus {
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
+  padding-right: 15px;
+}
+.nav-item .dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  transform: translateX(-210px);
+  width: 232px;
+  max-height: 280px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.navbar .navbar-brand {
+  font-size: 32px;
+  color: #fb811e;
+  padding: 0px;
+  position: relative;
+}
+/* Light theme */
+.navbar .navbar-brand:hover {
+  color: black;
+  transition-duration: all 0.5s !important;
+}
 
-/* CAROUSEL */
+#myBody {
+  background-color: white;
+}
+#switchButton {
+  background-color: white;
+}
+#switchButton .fa-sun {
+  display: none;
+}
+#switchButton .fa-moon {
+  display: block;
+}
+#dropdown {
+  transition: ease-in;
+}
 
-/* GROW NATURALLY */
+/* Dark Theme*/
+.dark#myBody {
+  background-color: black;
+}
+.dark #switchButton {
+  background-color: black; 
+}
+.dark #switchButton .fa-sun {
+  display: block;
+  color: white;
+}
+.dark #switchButton .fa-moon {
+  display: none;
+}
+.dark .navbar .navbar-brand:hover {
+  color: white;
+}
+.dark .dropdown a {
+  color: white;
+}
 
-/* WHAT WE DO */
+.dark .dropdown-menu {
+  background-color: #222;
+}
+.dark .dropdown-menu a.active {
+  color: #fb811e;
+}
+.dark .dropdown-item:hover {
+  color: #fb811e;
+}
+/* end header */
 
-/* WHY CHOOSE US */
+/* start carousel */
 
-/* GALLERY */
+/* end carousel */
 
-/* FEEDBACK */
-
-/* FOOTER */
-
-/* BACK TO TOP */
-
-/* SIDEBAR */
+/* start growNaturally */
+button {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background: #fb811e;
+  color: #fff;
+}
+button:hover {
+  background: #009f4d;
+}
+.growNaturally__right {
+  width: 50%;
+}
+.growNaturally__left {
+  width: 50%;
+}
+/* end growNaturally */
