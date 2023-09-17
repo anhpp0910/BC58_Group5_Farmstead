@@ -1,58 +1,3 @@
-/* LIGHT THEME */
-#myBody {
-  --primary-color: #fb811e;
-  --secondary-color: #009f4d;
-  --font-color: #707070;
-  --bg-color: #fff;
-  --heading-color: #060606;
-  --border-color-light: #eee;
-}
-
-#themeSwitcher .gg-sun {
-  display: none;
-}
-#themeSwitcher .gg-moon {
-  display: block;
-}
-
-/* DARK THEME */
-.dark#myBody {
-  --primary-color: #fb811e;
-  --secondary-color: #009f4d;
-  --font-color: #b7b7b7;
-  --bg-color: #222222;
-  --heading-color: #fdfffc;
-  --border-color-light: rgba(255, 255, 255, 0.2);
-}
-
-.dark #themeSwitcher .gg-sun {
-  display: block;
-}
-
-.dark #themeSwitcher .gg-moon {
-  display: none;
-}
-
-/* THEME SWITCHER */
-.themeSwitcher {
-  position: absolute;
-  width: 100%;
-  color: #fff;
-}
-
-.themeSwitcher:hover {
-  color: var(--primary-color);
-}
-
-.themeSwitcher i {
-  position: absolute;
-  font-size: 15px;
-  top: 30px;
-  right: 150px;
-  display: block;
-  cursor: pointer;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -67,6 +12,13 @@ body {
   background-color: var(--bg-color);
 }
 
+/* HEADER */
+
+/* CAROUSEL */
+
+/* GROW NATURALLY */
+
+/* WHAT WE DO */
 /* CONTAINER */
 .container {
   width: 100%;
@@ -97,14 +49,26 @@ body {
     max-width: 1200px;
   }
 }
+/* LIGHT THEME */
+#myBody {
+  --primary-color: #fb811e;
+  --secondary-color: #009f4d;
+  --font-color: #707070;
+  --bg-color: #fff;
+  --heading-color: #060606;
+  --border-color-light: #eee;
+}
 
-/* HEADER */
+/* DARK THEME */
+.dark#myBody {
+  --primary-color: #fb811e;
+  --secondary-color: #009f4d;
+  --font-color: #b7b7b7;
+  --bg-color: #222222;
+  --heading-color: #fdfffc;
+  --border-color-light: rgba(255, 255, 255, 0.2);
+}
 
-/* CAROUSEL */
-
-/* GROW NATURALLY */
-
-/* WHAT WE DO */
 .whatWeDo {
   background-color: var(--secondary-color);
 }
@@ -286,6 +250,7 @@ body {
 
 .whyChooseUs__right {
   position: relative;
+  flex-shrink: 1;
 }
 
 .whyChooseUs__right img {
