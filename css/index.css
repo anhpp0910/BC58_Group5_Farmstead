@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
 }
 
-h1 {
+h1,h2,h3 {
   font-family: Volkhov, serif;
 }
-
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+  background-color: transparent;
+  user-select: none;
+}
 /* strat header */
 .dropdown-menu a.active {
   color: #fb811e;
@@ -17,11 +23,13 @@ h1 {
 .dropdown-item:hover {
   color: #fb811e;
 }
+.navbar {
+  position: relative;
+}
 .navbar h1 i {
   font-size: 20px;
   position: absolute;
   transform: translateX(-110px);
-  transition-duration: 0;
 }
 .search-right input[type=search]{
   background: #fff url(../img/search.png) no-repeat 10px center;;
@@ -53,13 +61,19 @@ h1 {
   text-align: center;
   margin-bottom: 0;
 }
+/* .dropdown-item {
+  position: absolute;
+  z-index: -1;
+} */
 .navbar .navbar-brand {
   font-size: 32px;
   color: #fb811e;
   padding: 0px;
   position: relative;
+  transition: 0.5s;
 }
 /* Light theme */
+
 .navbar .navbar-brand:hover {
   color: black;
   transition-duration: all 0.5s !important;
@@ -69,7 +83,7 @@ h1 {
   background-color: white;
 }
 #switchButton {
-  background-color: white;
+  background-color: transparent;
 }
 #switchButton .fa-sun {
   display: none;
@@ -84,9 +98,6 @@ h1 {
 /* Dark Theme*/
 .dark#myBody {
   background-color: black;
-}
-.dark #switchButton {
-  background-color: black; 
 }
 .dark #switchButton .fa-sun {
   display: block;
@@ -114,10 +125,42 @@ h1 {
 /* end header */
 
 /* start carousel */
-
+.container-fluid {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-left-content h2 {
+  transform: translateX(160px);
+  font-size: 100px;
+}
+.carousel-content {
+  transform: translateX(200px);
+}
+.carousel-content h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.carousel-slide {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.carousel-left {
+  z-index: 1;
+}
+.carousel-right {
+  position: relative;
+  z-index: 0;
+}
+p {
+  font-size: 20px;
+  color: #707070;
+}
 /* end carousel */
-
 /* start growNaturally */
+
 button {
   font-size: 16px;
   line-height: 26px;
@@ -132,10 +175,31 @@ button {
 button:hover {
   background: #009f4d;
 }
-.growNaturally__right {
-  width: 50%;
-}
-.growNaturally__left {
-  width: 50%;
+.growNaturally__list {
+  position: unset;
 }
 /* end growNaturally */
+.carousel-item img {
+  border-bottom-left-radius: 32px;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.conent-inner-image {
+  position: absolute;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  bottom: 0px;
+  right: 0px;
+  padding: 16px;
+}
+
+.growNaturally__left {
+  background-color: red;
+}
+.growNaturally__right {
+  background-color: orange;
+}
