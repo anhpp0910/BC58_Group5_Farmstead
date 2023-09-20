@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5 {
   font-family: Volkhov, serif;
 }
 .header {
@@ -73,7 +73,6 @@ h1,h2,h3 {
   transition: 0.5s;
 }
 /* Light theme */
-
 .navbar .navbar-brand:hover {
   color: black;
   transition-duration: all 0.5s !important;
@@ -84,6 +83,8 @@ h1,h2,h3 {
 }
 #switchButton {
   background-color: transparent;
+  font-size: 22px;
+  color: white;
 }
 #switchButton .fa-sun {
   display: none;
@@ -94,7 +95,13 @@ h1,h2,h3 {
 #dropdown {
   transition: ease-in;
 }
-
+.nav-item .dropdown {
+  color: #fff;
+  font-size: 22px;
+}
+.navbar-nav {
+  align-items: center;
+}
 /* Dark Theme*/
 .dark#myBody {
   background-color: black;
@@ -122,6 +129,15 @@ h1,h2,h3 {
 .dark .dropdown-item:hover {
   color: #fb811e;
 }
+.dark h3 {
+  color: #fff;
+}
+.dark .carousel-left-content h2 {
+  color: #0b0d0e;
+}
+.dark .title-head{
+  color: #fff;
+}
 /* end header */
 
 /* start carousel */
@@ -131,8 +147,10 @@ h1,h2,h3 {
   position: relative;
 }
 .carousel-left-content h2 {
-  transform: translateX(160px);
+  transform: translateX(150px) translateY(60px);
   font-size: 100px;
+  color: #f4f4f4;
+  
 }
 .carousel-content {
   transform: translateX(200px);
@@ -160,7 +178,13 @@ p {
 }
 /* end carousel */
 /* start growNaturally */
-
+.p-4 {
+  transform: translateX(-26px);
+}
+h5 {
+  color: #fb811e;
+  font-size: 22px;
+}
 button {
   font-size: 16px;
   line-height: 26px;
@@ -175,10 +199,6 @@ button {
 button:hover {
   background: #009f4d;
 }
-.growNaturally__list {
-  position: unset;
-}
-/* end growNaturally */
 .carousel-item img {
   border-bottom-left-radius: 32px;
 }
@@ -189,17 +209,51 @@ button:hover {
 }
 .conent-inner-image {
   position: absolute;
-  background-color: red;
   display: flex;
   flex-direction: column;
   bottom: 0px;
   right: 0px;
   padding: 16px;
 }
-
-.growNaturally__left {
-  background-color: red;
+.conent-inner-image h5 {
+  color: #fff;
 }
-.growNaturally__right {
-  background-color: orange;
+.conent-inner-image p {
+  color: #fff;
 }
+.title-style {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  color: #060606;
+}
+.call-grids-w3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.box-wrap h4 a {
+  font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color: #060616;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.box-wrap h4 a:hover {
+  color: #009f4d;
+}
+.box-wrap {
+    padding: 40px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow:  0 1rem 3rem rgb(23 19 19);
+}
+.box-wrap img {
+  max-width: 65px;
+  display: block;
+  margin: 0 auto
+}
+/* end growNaturally */
